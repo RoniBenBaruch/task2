@@ -39,6 +39,7 @@ export default class CCForm extends Component {
 
     render() {
         return (<div> <br />
+        <form>
             <p style={{ color: "red" }}>{this.state.last}</p>
             last name: <input type="text" onFocus={this.fillLast} onBlur={this.clearLast}></input> <br />
             <p style={{ color: "red" }}>{this.state.first}</p>
@@ -46,6 +47,7 @@ export default class CCForm extends Component {
             <p style={{ color: "red" }}>{this.state.psy}</p>
             psychometric score: <input type="number" onFocus={this.fillPsy} onBlur={this.clearPsy} ></input>
             <p>{this.state.score}</p>
+            </form>
         </div>);
     }
 }
